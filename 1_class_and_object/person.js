@@ -1,8 +1,10 @@
 class  Person {
+
     #height = 0
     #weight = 0
     #name = ""
-    #age = 0
+    #age = 0 
+
     printperson(name){
         console.log(this.#name + " age " + this.#age +" years"+ " height: "+ this.height+"m weight: "+ this.weight + "kg")
     }
@@ -14,7 +16,12 @@ class  Person {
         return this.height
     }
     setheight(height){
-        this.height = height
+        if (height < 0){
+            console.log("Not a valid number")
+        }
+        else{
+            this.height = height
+        }
     }
     gainheight(){
         this.height++
@@ -23,7 +30,12 @@ class  Person {
         return this.weight
     }
     setweight(weight){
-        this.weight = weight
+        if (weight < 0){
+            console.log("Not a valid number")
+        }
+        else{
+            this.weight = weight
+        }
     }
     grow(){
         this.height++

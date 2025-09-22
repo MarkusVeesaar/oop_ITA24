@@ -17,11 +17,11 @@ bob.setheight(1.70)
 brian.setheight(1.75)
 Alice.setheight(1.80)
 
-bob.setweight("100")
+bob.setweight(-10)
 brian.setweight("90")
 Alice.setweight("80")
 
-console.log(bob.getBMI())
+console.log(brian.getBMI())
 
 bob.printperson();
 brian.printperson();
