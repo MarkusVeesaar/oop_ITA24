@@ -56,5 +56,4 @@ class  Person {
         return this.#age
     }
 };
-
 module.exports = Person
